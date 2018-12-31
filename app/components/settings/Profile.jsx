@@ -14,6 +14,8 @@ const Hint = styled.p`
 
 // Animation
 import _withFadeInAnimation from '../shared/hoc/_withFadeInAnimation';
+import Fields from './_partials/invoice/Fields';
+import Other from './_partials/invoice/Other';
 
 // Component
 class Profile extends Component {
@@ -43,14 +45,19 @@ class Profile extends Component {
   }
 
   render() {
-   const { t } = this.props;
+    const { t } = this.props;
+
+    const {
+      logo,
+      postcode
+    } = this.state;
     return (
       <div>
         <div className="pageItem">
           <label className="itemLabel">{t('settings:fields:logo:name')}</label>
           <Hint>{t('settings:fields:logo:hint')}</Hint>
           <Logo
-            logo={this.state.logo}
+            logo={logo}
             handleLogoChange={this.handleLogoChange}
           />
         </div>
@@ -64,7 +71,6 @@ class Profile extends Component {
               onChange={this.handleInputChange}
             />
           </div>
-
           <div className="pageItem col-md-6">
             <label className="itemLabel">{t('common:fields:company')}</label>
             <input
@@ -76,6 +82,8 @@ class Profile extends Component {
           </div>
         </div>
 
+        <hr width="2" size="500"></hr>
+
         <div className="row">
           <div className="pageItem col-md-6">
             <label className="itemLabel">{t('common:fields:address')}</label>
@@ -86,7 +94,63 @@ class Profile extends Component {
               onChange={this.handleInputChange}
             />
           </div>
+          <div className="pageItem col-md-6">
+            <label className="itemLabel">{t('common:fields:postcode')}</label>
+            <input
+              name="postcode"
+              type="text"
+              value={this.state.postcode}
+              onChange={this.handleInputChange}
+            />
+          </div>
+        </div>
 
+        <div className="row">
+          <div className="pageItem col-md-6">
+            <label className="itemLabel">{t('common:fields:street')}</label>
+            <input
+              name="street"
+              type="text"
+              value={this.state.street}
+              onChange={this.handleInputChange}
+            />
+          </div>
+          <div className="pageItem col-md-6">
+            <label className="itemLabel">{t('common:fields:streetNumber')}</label>
+            <input
+              name="streetNumber"
+              type="text"
+              value={this.state.streetNumber}
+              onChange={this.handleInputChange}
+            />
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="pageItem col-md-6">
+            <label className="itemLabel">{t('common:fields:country')}</label>
+            <input
+              name="country"
+              type="text"
+              value={this.state.country}
+              onChange={this.handleInputChange}
+            />
+          </div>
+          <div className="pageItem col-md-6">
+            <label className="itemLabel">{t('common:fields:town')}</label>
+            <input
+              name="town"
+              type="text"
+              value={this.state.town}
+              onChange={this.handleInputChange}
+            />
+          </div>
+        </div>
+
+
+        <hr width="2" size="500"></hr>
+
+        <div className="row">
           <div className="pageItem col-md-6">
             <label className="itemLabel">{t('common:fields:email')}</label>
             <input
@@ -108,7 +172,6 @@ class Profile extends Component {
               onChange={this.handleInputChange}
             />
           </div>
-
           <div className="pageItem col-md-6">
             <label className="itemLabel">{t('common:fields:website')}</label>
             <input
@@ -119,15 +182,50 @@ class Profile extends Component {
             />
           </div>
         </div>
+
+        <div className="row">
+          <div className="pageItem col-md-6">
+            <label className="itemLabel">{t('common:fields:bank')}</label>
+            <input
+              name="bank"
+              type="text"
+              value={this.state.bank}
+              onChange={this.handleInputChange}
+            />
+          </div>
+          <div className="pageItem col-md-6">
+            <label className="itemLabel">{t('common:fields:iban')}</label>
+            <input
+              name="iban"
+              type="text"
+              value={this.state.iban}
+              onChange={this.handleInputChange}
+            />
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="pageItem col-md-6">
+            <label className="itemLabel">{t('common:fields:bic')}</label>
+            <input
+              name="bic"
+              type="text"
+              value={this.state.bic}
+              onChange={this.handleInputChange}
+            />
+          </div>
+        </div>
+
       </div>
     );
   }
 }
 
-Profile.propTypes = {
-  profile: PropTypes.object.isRequired,
-  t: PropTypes.func.isRequired,
-  updateSettings: PropTypes.func.isRequired,
-};
 
-export default _withFadeInAnimation(Profile);
+        Profile.propTypes = {
+        profile: PropTypes.object.isRequired,
+        t: PropTypes.func.isRequired,
+        updateSettings: PropTypes.func.isRequired,
+      };
+
+        export default _withFadeInAnimation(Profile);

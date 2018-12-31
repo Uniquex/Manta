@@ -3,9 +3,17 @@
     "fullname": "Full Name",
     "company": "Company",
     "address": "Address",
+    "town": "Town",
+    "country": "Country",
+    "street": "Street",
+    "streetNumber": "Street Number",
+    "postcode": "Postcode",
     "email": "Email",
     "phone": "Phone Number",
-    "website": "Website"
+    "website": "Website",
+    "bank": "Bank",
+    "iban": "IBAN",
+    "bic": "BIC"
   },
   "save": "Save",
   "amount": "Amount",

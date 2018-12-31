@@ -27,6 +27,8 @@ rules:
   # RULES THAT WE CONSCIOUSLY DISABLE
   radix: off
 
+  # Windows development
+  "linebreak-style": 0
   # RULES THAT WE SHOULD INVESTIGATE AND PROBABLY ENABLE
   prefer-template: off
   no-underscore-dangle: off

@@ -181,9 +181,16 @@ function setInitialValues() {
       fullname: 'Manta Ray',
       company: 'Oceanic Preservation Society',
       address: '336 Bon Air Center #384 Greenbrae, CA 94904',
+      town: 'MantaTown',
+      postcode: 'MT 1234',
+      street: 'Mantastreet',
+      streetNumber: '123',
       email: 'info@opsociety.org',
       phone: '+01 (0) 1-2345-6789',
       website: 'http://www.opsociety.org/',
+      bank: 'TestBank',
+      iban: 'GB43 1234 1234 1234 1234',
+      bic: 'ABCDEF12345'
     },
     general: {
       language: 'en',
