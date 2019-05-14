@@ -159,6 +159,8 @@ It's very easy to get started with these 3 steps:
 * Run `yarn dev` in one tab to start `webpack-dev-server`.
 * Run `yarn start` in another tab to open the app.
 
+* Run `yarn release:win` to build the windows portable and executable
+
 This is still in beta and it's far from perfect so feedbacks, issues or PRs are greatly appreciated! :)
 
 Note that on Linux you will need additional dependencies to provide the `icns2png` and `gm` commands.
