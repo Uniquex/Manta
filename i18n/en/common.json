@@ -13,7 +13,8 @@
     "website": "Website",
     "bank": "Bank",
     "iban": "IBAN",
-    "bic": "BIC"
+    "bic": "BIC",
+    "subText": "SubText"
   },
   "save": "Save",
   "amount": "Amount",

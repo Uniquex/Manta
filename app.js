@@ -190,7 +190,8 @@ function setInitialValues() {
       website: 'http://www.opsociety.org/',
       bank: 'TestBank',
       iban: 'GB43 1234 1234 1234 1234',
-      bic: 'ABCDEF12345'
+      bic: 'ABCDEF12345',
+      subText: 'XYXY'
     },
     general: {
       language: 'en',

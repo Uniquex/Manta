@@ -216,6 +216,18 @@ class Profile extends Component {
           </div>
         </div>
 
+        <div className="row">
+          <div className="pageItem col-md-6">
+            <label className="itemLabel">{t('common:fields:subText')}</label>
+            <input
+              name="subText"
+              type="text"
+              value={this.state.subText}
+              onChange={this.handleInputChange}
+            />
+          </div>
+        </div>
+
       </div>
     );
   }

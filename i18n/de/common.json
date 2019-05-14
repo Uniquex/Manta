@@ -5,7 +5,8 @@
     "address": "Adresse",
     "email": "E-Mail",
     "phone": "Telefonnummer",
-    "website": "Webseite"
+    "website": "Webseite",
+    "subText": "SubText"
   },
   "save": "Speichern",
   "amount": "Betrag",
